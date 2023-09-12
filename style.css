@@ -1,0 +1,418 @@
+body {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+      }
+            .dd {
+         position: relative;
+         display: inline-block;
+         width: 100%;
+         z-index: 500;
+         position: fixed;
+         margin-right: 0 auto;
+         margin-left: 0 auto;
+         
+      }
+      .dd-btn {
+         padding: 15px;
+         text-align: center;
+         background: #173459;
+         border: none;
+         width:95.5%;
+         color: #f8f9f9;
+      }
+      .dd-content {
+         position: absolute;
+         width: 95.5%;
+         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+         height: 0px;
+         transition: height 1s;
+         overflow: hidden;
+         border-bottom-right-radius: 10px;
+         border-bottom-left-radius: 10px;
+      }
+      .dd:hover > .dd-content {
+         height: 150px;
+      }
+      .dd-content > a {
+         display: block;
+         padding: 15px;
+         text-decoration: none;
+         color: black;
+         background-color: white;
+      }
+      
+
+/*navigation codes starts here*/
+
+
+    .nav-bar {
+         position: fixed;
+         top: 0px; /* sticks the side nav to the top */
+         left: 0px; /* sticks the side nav to the left side */
+         width: 100%;
+      }
+      .content {
+         margin-top: 50px;
+      }
+      .content > div {
+         padding: 15px;
+      }
+      .nav-bar a {
+         text-decoration: none;
+         color: white;
+         display: block;
+         height: 50px; /* sets fixed height */
+         line-height: 50px; /* vertically centers the text */
+      }
+      .nav-bar > ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+      }
+      .nav-bar > ul > li > a {
+         background: #00008b;
+      }
+      .nav-bar > ul > li > a:hover {
+         background: #fff;
+         color: #00008b;
+      }
+
+      .nav-bar li {
+         float: left;
+         width: 20%; /* 100% / 4 (number of li elements) = 20% */
+         text-align: center;
+         border-right: 1px solid #333; /* for the borders */
+      }
+      .nav-bar li:last-child {
+         border: none;
+      }
+      .nav-bar .active {
+         background: black;
+         color: #f8f9f9;
+         border-bottom-left-radius:10px;
+         border-bottom-right-radius: 10px;
+      }
+
+
+/* navigation codes end*/
+
+
+
+/* table codes */
+
+     table {
+         width: 100% ;
+         border-collapse: collapse;
+         font-family: sans-serif;
+         color: white;
+         text-align: center;
+         box-shadow: rgb(0 0 0 / 90%) 0px 3px 8px;
+         
+         border-bottom-right-radius:5px;
+      }
+      table, th, td {
+         border: 2px solid #00008b;
+      }
+      th, td {
+         padding: 5px;
+      }
+     
+      thead td, tbody td {
+         text-align: center;
+      }
+
+      tfoot td {
+         text-align: center;
+      }
+
+
+    
+    .elimufix-grid {
+        margin-top:55px;
+        background-color: #fff;
+        border-radius:20px;
+      padding: 10px;
+      text-align: center;
+     margin-bottom: 10px;
+        box-shadow: rgb(0 0 0 / 90%) 0px 3px 8px;
+  }
+  
+  
+  .elimufix-grid ul {
+      clear: both;
+      margin: 15px 0 20px;
+      padding:0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .coll-2 ul li {
+      width: 48%;
+  }
+  
+  .elimufix-grid li {
+      font-size: 0.9em;
+      font-weight: 1000;
+      line-height: 1.3em;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 5px;
+      margin: 5px 0;
+      box-sizing: border-box;
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+      padding: 10px 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .elimufix-grid li a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+  }
+  
+  .elimufix-grid li svg {
+      margin: 3px 0;
+      width: 35px;
+      height: 35px;
+      fill: #00008b;
+      display: inline-block;
+  }
+  
+  .elimufix-grid li span {
+      display: block;
+      padding: 0 3px;
+  }
+  
+  .elimufix-grid p{
+      text-align: justify;
+      font-size: medium;
+  }
+
+  .elimufix-notes{
+      margin-top: 30px;
+      background-color: #fff;
+      box-sizing: border-box;
+      box-shadow: rgb(0 0 0 / 90%) 0px 3px 8px;
+      text-align: justify;
+      border-radius: 20px;
+      padding: 10px;
+  }
+  .elimufix-notes h3,h4{
+      text-align: center;
+      
+  }
+
+
+ .link{
+
+      justify-content: space-between;
+
+ }
+          
+     
+  .link a{
+      font-weight: bold;
+      font-size: medium;
+      border: 2px solid black;
+      padding: 6px;
+      text-decoration: none;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      line-height: 1.3em;
+      clear: both;
+      color: #00008b;
+      margin: 5px;
+      display: block;
+      background-color: #fff;
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+  .link a:hover{
+      background-color:#00008b;
+      color:#fff;
+      border-bottom-right-radius:20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: 2px solid red;
+      border-left: 2px solid red;
+      border-right: 2px solid red;
+  }
+  
+  
+  
+  .get{
+
+      justify-content: space-between;
+      text-align: center;
+
+ }
+          
+     
+  .get a{
+      font-weight: bold;
+      font-size: medium;
+      border: 2px solid #00008b;
+      padding: 6px;
+      text-decoration: none;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      line-height: 1.3em;
+      clear: both;
+      color: #fff;
+      margin: 5px;
+      display: block;
+      background-color: green;
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+  .get a:hover{
+      background-color:#00008b;
+      color:#fff;
+      border-bottom-right-radius:20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: 2px solid red;
+      border-left: 2px solid red;
+      border-right: 2px solid red;
+  }
+ 
+  
+  img{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      border-radius:10px;
+      box-shadow: rgb(0 0 0 / 90%) 0px 3px 8px;
+  }
+  
+  
+
+  
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+ 
+}
+body{
+  overflow: translateX;
+  background: #f2f2f2;
+}
+.wrapper{
+    
+    z-index: 401;
+  position: fixed;
+  top: 10%;
+  bottom: 50%;
+  animation: show_toast 1s ease forwards;
+}
+@keyframes show_toast {
+  0%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    transform: translateX(20px);
+  }
+}
+.wrapper.hide{
+  animation: hide_toast 1s ease forwards;
+}
+@keyframes hide_toast {
+  0%{
+    transform: translateX(20px);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+}
+.wrapper .toast{
+    
+    z-index: 5000;
+    top: 50px;
+  background: #fff;
+  padding: 20px 15px 20px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2ecc71;
+  border-right:5px solid #2ecc71;
+ 
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .toast.offline{
+  border-color: red;
+}
+.toast .content{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper svg{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    fill: #00008b;
+}
+
+.content .icon{
+  font-size: 20px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+.toast.offline .content .icon{
+  background: red;
+  text-align: ;
+}
+.content .details{
+  margin-left: 10px;
+}
+.details span{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  
+}
+.details p{
+  color: #00008b;
+  font-weight: bold;
+}
+.toast .close-icon{
+  color: #00008b;
+  font-size: 23px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+.close-icon:hover{
+  background: #efefef;
+}
